@@ -30,7 +30,7 @@ int main(){
        for(int i = 0; i <= n;i++){
         if(malvados(i)){
           if(i==0){
-            cout<<0<<endl;
+            cout<<0<<" "<<0<<endl;
           }else{
             
             cout<<"  "<<i<<endl;
