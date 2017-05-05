@@ -17,6 +17,10 @@ int main(){
        int n;
        cout<<"Ingrese un numero: ";
        cin>> n;
+       while(n<0){
+        cout<<"El numero no puede ser negativo. Ingrese otro valor: ";
+        cin>>n;
+       }
        for(int i = 0; i <= n;i++){
         if(malvados(i)){
           cout<<i<<endl;
