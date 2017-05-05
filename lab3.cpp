@@ -47,8 +47,10 @@ int main(){
         matriz = crear(5);
         cout<<"Matriz original: "<<endl;
         imprimir(5,matriz,0,0);
-        cout<<*(*(matriz+4)+4);
+        
         cout<<"Matriz rotada: "<<endl;
+        matriz = rotar(matriz,5);
+        imprimir(5,matriz,0,0);
         liberar(5,matriz); 
         break;
       }
@@ -94,10 +96,14 @@ void imprimir(int n,int** matriz,int i,int j){
 }
 int** rotar(int** matriz,int n){
   int** retorno = crear(5);
-
+  int tem = 4;
   for(int i = 0;i<n;i++){
-    
+    for(int j = 0;j<n;j++){
+      retorno[j][tem] = matriz[i][j];
+    }
+    tem--;
   }
+  return retorno;
 }
 int** crear(int n){
   int** ret = new int*[n];
