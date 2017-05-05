@@ -8,6 +8,7 @@ int** rotar(int**,int);
 void imprimir(int,int**,int,int);
 int** crear(int);
 void liberar(int,int**);
+
 int main(){
   char vivo = true;
   while(vivo){
