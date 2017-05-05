@@ -36,9 +36,9 @@ int main(){
             cout<<"  "<<i<<endl;
           }
         }
-        //cout<<endl;
+        
        }
-       //cout<<endl;
+       
         break;
       }
      case 2:{
@@ -115,6 +115,7 @@ int** crear(int n){
       ret[i][j] = i+j;
     }
   }
+  
   return ret;
 }
 void liberar(int n, int** matriz){
